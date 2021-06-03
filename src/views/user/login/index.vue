@@ -1,6 +1,7 @@
 <template>
   <div class="wraper login-wraper">
     <a-form
+      class="login-form"
       name="custom-validation"
       ref="formRef"
       :model="formState"
@@ -35,6 +36,7 @@
 import { defineComponent, reactive, ref } from 'vue'
 import { _userLogin } from '@/api/user'
 import { setCookie } from '@/utils'
+import "./login.css";
 
 export default defineComponent({
   name: 'Login',
@@ -109,5 +111,5 @@ export default defineComponent({
 </script>
 
 <style>
-@import url('./login.css');
+
 </style>
